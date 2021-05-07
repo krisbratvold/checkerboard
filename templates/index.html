@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div id="board">
+    {% for i in range(col): %}
+        <div>
+            {% for j in range(rows): %}
+            <div class="red_square" style = "background-color: {{color2}}"></div>
+            <div class="black_square" style = "background-color: {{color1}}"></div>
+            {% endfor %}
+        </div>
+        <div>
+            {% for j in range(rows): %}
+            <div class="black_square" style = "background-color: {{color1}}"></div>
+            <div class="red_square" style = "background-color: {{color2}}"></div>
+            {% endfor %}
+        </div>
+    {% endfor%}
+    </div>
+</body>
+</html>

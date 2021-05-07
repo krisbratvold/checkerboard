@@ -1,0 +1,13 @@
+#board{
+    display: flex;
+}
+.black_square{
+    height:50px;
+    width:50px;
+    background-color: black;
+}
+.red_square{
+    height: 50px;
+    width:50px;
+    background-color: red;
+    }
